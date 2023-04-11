@@ -1,0 +1,345 @@
+
+@media (min-width: 1921px) { 
+    #welcomeArea{
+        background: url(../img/homebg.png) no-repeat top;
+        background-size: cover;
+
+    }
+ }
+
+@media (max-width: 740px) { 
+    #testimonial .slick-arrow {
+        display: none!important;
+    }
+ }
+
+@media (max-width: 1199.98px) { 
+    #welcomeArea .left .searcAddress input {
+        width: 300px;
+    } 
+    #hiw .box.box1 i::after, #hiw .box.box2 i::after, #hiw .box.box3 i::after {
+        display: none;
+    }
+    #testimonial .slick-arrow:first-child {
+        left: -100px;
+    }
+    #testimonial .slick-arrow:last-child {
+        right: -100px;
+    }
+    #footer {
+        background-position-y: 0px;
+    }
+    h1 {
+        font-size: 52px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    #footer .newslatterBox .box {
+        padding: 47px 45px 42px;
+    }
+
+    
+ }
+
+@media (max-width: 991.98px) { 
+
+
+
+    h1 {
+        font-size: 46px;
+    }
+    #welcomeArea .topcontent {
+        padding: 262px 0px 99px;
+    }
+    #welcomeArea .aboutTop .box {
+        margin: 0px 0px 30px;
+    }
+    .row.aboutTop {
+        margin-top: 100px;
+    }
+    #aboutUs {
+        margin-top: 100px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    #investor .heading-title p {
+        margin-bottom: 66px;
+    }
+    .priceBox {
+        margin-bottom: 12px;
+    }
+    .pBoxPopular {
+        margin-top: 42px;
+    }
+    #package .heading-title {
+        margin-bottom: 23px;
+    }
+    #package {
+        padding: 123px 0px 143px;
+    }
+    #investors {
+        padding: 122px 0px 100px;
+    }
+    #investors .box {
+        margin-bottom: 30px;
+    }
+    #footer .newslatterBox h2 {
+        font-size: 22px;
+    }
+    #footer .newslatterBox .left {
+        margin-right: 50px;
+    }
+    #footer .newslatterBox input {
+        width: 170px;
+    }
+    #footer .box.box2 {
+        margin-top: 20px;
+    }
+    #footer .box.box3 {
+        margin-top: 40px;
+    }
+    #footer .box.box4 {
+        margin-top: 42px;
+    }
+    #footer {
+        padding: 0px 0px 0px;
+    }
+  
+    .table tr th:first-child {
+        padding-left: 15px;
+    }
+    .table tr th {
+        font-size: 18px;
+        text-align: left;
+    }
+    .table .media {
+        padding-left: 0px;
+    }
+    #footer .copyright {
+        margin-top: 124px;
+    }
+   
+
+ }
+
+@media (max-width: 767.98px) { 
+    h1 {
+        font-size: 36px;
+    }
+    #welcomeArea .topcontent p {
+        padding: 0px 0px 0px 0px;
+    }
+    #welcomeArea .topcontent {
+        padding: 194px 0px 30px;
+    }
+    #aboutUs .right img{
+        margin-top: 50px;
+    }
+    .table .media img {
+        margin-right: 10px;
+        width: 40px!important;
+        height: 40px;
+        max-width: 40px!important;
+    }
+    .table tr th {
+        font-size: 12px;
+        text-align: left;
+    }
+    .table tr td {
+        font-size: 12px;
+    }
+    .table .media p {
+        font-size: 12px;
+    }
+    .table tr td {
+        padding: 20px 0px 0px 5px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #investor .right img{
+        margin-top: 50px;
+    }
+    #footer .newslatterBox input {
+        width: 100%;
+    }
+    #footer .newslatterBox button {
+
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        top: 10px;
+    }
+    #footer .newslatterBox .box {
+        padding: 0px 0px 0px;
+    }
+    #footer .newslatterBox .box {
+        margin-top: -326px;
+    }
+    #footer {
+        padding: 0px 0px 0px;
+    }
+    #faq {
+        padding: 122px 0px 196px;
+    }
+    #welcomeArea .topcontent h1 {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media (max-width: 575.98px) { 
+    header.header {
+        padding: 10px 15px 10px;
+    }
+
+    #investors .box {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+ }
+ 
+@media (max-width: 510px) { 
+    #investors .box {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+ }
+
+
+
+ @media (max-width: 450px){
+    #investors .box {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+ }
+ @media (max-width: 538px){
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    #welcomeArea .aboutTop .box span {
+        font-size: 36px;
+    }
+    #welcomeArea .topcontent h1 {
+        margin-bottom: 8px;
+    }
+
+ }
+
+
+ @media (max-width: 400px){
+    #investors .box { 
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+ @media (max-width: 401px){
+    h3 {
+        font-size: 18px;
+    }
+
+}
+
+ @media (max-width: 437px){
+    .tab1 ul li a {
+        width: 125px;
+    }
+}
+
+ @media (max-width: 340px){
+    #investors .box {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #investors .box .image img{
+        width: 100%;
+    }
+    #footer .newslatterBox .box {
+        padding: 48px 15px 58px;
+    }
+
+}
+ @media (max-width: 322px){
+    #investors .box {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
+
+ @media (max-width: 485px){
+    h2 {
+        font-size: 28px;
+    }
+    
+    .faq-accordian .panel-group .panel .panel-heading .panel-title a::after {
+        display: none;
+    }
+
+}
+ @media (max-width: 428px){
+    h2 {
+        font-size: 25px;
+    }
+
+}
+ @media (max-width: 500px){
+    #welcomeArea .topcontent a {
+        width: 160px;
+    }
+    #welcomeArea .aboutTop .box span {
+        font-size: 30px;
+    }
+    #welcomeArea .aboutTop .box i {
+        font-size: 33px;
+    }
+    .aboutUs .abtn {
+        width: 150px;
+    height: 50px;
+    line-height: 50px;
+    }
+    #wcu .box .viweBtn {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+    }
+    #investor .investbtn {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .faq-accordian .panel-group .panel .panel-body {
+        font-size: 14px;
+    }
+    .faq-accordian .panel-group .panel .panel-heading .panel-title a::after {
+        display: none;
+    }
+}
+
+ @media (max-width: 460px){
+    #footer .newslatterBox .box{
+        display: flow-root!important;
+    }
+    #footer .newslatterBox .sectionSeparator {
+        margin-bottom: 22px;
+        margin-top: 14px;
+    }
+    #footer .newslatterBox .box {
+        margin-top: -402px;
+    }
+    #footer {
+        padding: 0px 0px 0px;
+    }
+    #faq {
+        padding: 122px 0px 226px;
+    }
+
+}

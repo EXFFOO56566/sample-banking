@@ -1,0 +1,62 @@
+.mb_YTPBar .buttonBar {
+  display: none;
+}
+#welcomeArea{
+  position: relative;
+}
+#welcomeArea .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.80), rgba(82, 113, 196, 0.80));
+  background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.80), rgba(82, 113, 196, 0.80));
+  background: linear-gradient(to right, rgba(240, 181, 253, 0.830), rgba(82, 113, 196, 0.80));
+
+}
+.atop .box {
+  margin: 0px 0px 30px!important;
+}
+.atop {
+  margin-bottom: 100px!important;
+  padding-top: 121px;
+}
+.atop  .heading-title p{
+  margin-top: 2px;
+}
+
+.atop  .heading-title{
+  margin-bottom: 66px;
+}
+
+
+#welcomeArea .topcontent {
+  padding: 335px 0px 240px;
+}
+
+
+
+
+@media (max-width: 991px) {
+  #welcomeArea .topcontent {
+    padding: 262px 0px 199px!important;
+  }
+  .row.aboutTop {
+    margin-top: 0px!important;
+}
+
+ }
+
+ @media (max-width: 767.98px) { 
+  #welcomeArea .topcontent {
+    padding: 264px 0px 199px !important;
+}
+}
+
+
+ @media (max-width: 538px) { 
+  #welcomeArea .topcontent {
+    padding: 265px 0px 200px !important;
+}
+  }

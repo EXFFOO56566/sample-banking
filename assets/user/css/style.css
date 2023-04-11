@@ -1,0 +1,1772 @@
+/*-----------------------------------------------------------------
+
+Project     : Finan - Financial Investment Website HTML Template 
+Version     : 1.0
+Author      : Thesoftking
+Front-end developer : Mamunur Rashid
+=====================================================================
+
+[Table of contents]
+
+1. Base CSS Start
+2. Site Preloader Css Start
+4. Main Menu Area Start
+5. Welcome Area Start
+6. About Area Start
+7. Transaction Area Start
+8. Invest Area Start
+9. Invest Area End
+10. Why Should Choose Us Area Start
+11. Payment Method Area Start
+12. Our Package Area Start
+13. Investors Area Start
+14. FAQ Area Start
+15. Footer Area Start 
+16. Click BottomToTop
+
+
+
+==================================================================*/
+
+/*====================================================================
+1. Base CSS Start
+======================================================================*/
+
+/*--Google Font Import--*/
+@import url("https://fonts.googleapis.com/css?family=Exo:400,600|Poppins:300,400,500,600,700");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-weight: 400;
+    color: #203566;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    color: #2c3e50;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1,
+.h1,
+.h2,
+.h3 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Exo', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo', sans-serif;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #203566;
+    margin-bottom: 0px;
+}
+
+a {
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-family: 'Exo', sans-serif;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.margin-0 {
+    margin: 0
+}
+
+.form-control {
+    border: 1px solid #e2e2e2;
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.modal {
+    z-index: 9999999;
+    background: rgba(0, 0, 0, 0.49);
+}
+
+.affix {
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 725px;
+}
+
+.sectionSeparator {
+    height: 5px;
+    width: 100px;
+    background: #fe846f;
+    display: inline-block;
+    margin: 0px 0px 5px;
+
+}
+
+
+/*=================================================
+2. Site Preloader Css Start
+===================================================*/
+.site-preloader {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.site-preloader .spinner {
+    width: 60px;
+    height: 60px;
+    margin: 21% auto;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+/* ================================================
+4. Main Menu Area Start
+===================================================*/
+
+.support-bar-area {
+    display: none;
+}
+
+header.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 27px 0px 27px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: 0px;
+}
+
+#mainHeader .navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+}
+
+#mainHeader.header.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #dca9f6;
+    border-bottom: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#mainHeader.header .nav-link {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+#mainHeader.header .nav-link.active {
+    color: #5271c4;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mainHeader.header .nav-link:hover {
+    color: #5271c4;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#mainHeader.header .nav-item:last-child .nav-link {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#mainHeader .navbar-light .navbar-toggler {
+    border: 0px;
+}
+
+#mainHeader .viewPlan a {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 185px;
+    border-radius: 4px;
+}
+
+
+#mainHeader .viewPlan a:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #b499e7;
+}
+
+
+/* ==============================================
+Main Menu Area Start
+================================================== */
+
+
+
+/* =============================================
+5. Welcome Area Start
+================================================ */
+
+#welcomeArea {
+    background: url(../img/homebg.png) no-repeat top;
+}
+
+#welcomeArea .topcontent {
+    padding: 335px 0px 140px;
+}
+
+#welcomeArea .topcontent .sectionSeparator {
+    margin: 5px 0px 9px;
+}
+
+#welcomeArea .topcontent h1 {
+    color: #fff;
+}
+
+#welcomeArea .topcontent p {
+    display: block;
+    color: #ffff;
+    padding: 0px 110px 0px 110px;
+
+}
+
+#welcomeArea .topcontent a {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #fff;
+    background: #fe846d;
+    border: 2px solid #fe846d;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 48px;
+}
+
+#welcomeArea .topcontent a:hover {
+    border-color: #ffff;
+    background: #fe856d00;
+}
+
+ .aboutTop .box {
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.90);
+    margin: 100px 0px 100px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+.aboutTop .box i {
+    font-size: 40px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+ .aboutTop .box span {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Exo', sans-serif;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 13px;
+}
+
+
+ .aboutTop .box h4 {
+    margin: 6px 0px 22px;
+    color: #575f84;
+    font-weight: 600;
+
+
+}
+
+.aboutTop .box p {
+    color: #575f84;
+    line-height: 30px;
+
+}
+
+ .aboutTop .box:hover {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+}
+
+ .aboutTop .box:hover i {
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+ .aboutTop .box:hover span {
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+ .aboutTop .box:hover h4,
+ .aboutTop .box:hover P {
+    color: #FFF;
+}
+
+
+
+/* =============================================
+Welcome Area End
+================================================ */
+
+
+
+
+/* ============================================
+6. About Area Start
+=============================================== */
+#aboutUs {
+    margin-top: 32px;
+}
+
+#aboutUs .heading-title p {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #575f84;
+    margin-bottom: 24px;
+}
+
+#aboutUs .content p {
+    color: #575f84;
+}
+
+.aboutUs .abtn {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #fe846f;
+    border: 2px solid #fe846f;
+    line-height: 60px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    margin-top: 44px;
+}
+
+.aboutUs .abtn:hover {
+    border-color: #fe846f;
+    background: #fe846f;
+    color: #fff;
+}
+
+/* ============================================
+About Area End
+=============================================== */
+
+
+
+/* ==============================================
+7. Transaction Area Start
+================================================ */
+
+#transaction {
+    background: url(../img/sectionbg.png) no-repeat bottom;
+    padding: 125px 0px 119px;
+}
+
+#transaction .heading-title p {
+    margin-top: 3px;
+    margin-bottom: 37px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 0px solid #dee2e6;
+}
+
+.table tr th {
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 26px 11px 26px;
+    text-align: left;
+}
+
+.table tr th:first-child {
+    padding-left: 50px;
+}
+
+.table tr td {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 0px 0px 12px;
+}
+
+thead {
+    background: rgba(255, 255, 255, 0.10);
+    padding: 0px 10px;
+}
+
+.tab-content {
+    border-radius: 10px;
+    background: -webkit-linear-gradient(to right, #f0b5fd, #5271c4);
+    background: -moz-linear-gradient(to right, #f0b5fd, #5271c4);
+    background: linear-gradient(to right, #f0b5fd, #5271c4);
+    position: relative;
+}
+
+.tab-content::after {
+    position: absolute;
+    content: " ";
+    width: 95%;
+    height: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    background: linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.table .media {
+    padding-left: 40px;
+}
+.table .media img {
+    margin-right: 20px;
+}
+
+.table .media p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.table td,
+.table th {
+    border: 0px;
+}
+
+.table-bordered th {
+    line-height: 35px;
+}
+
+.table-bordered td {
+    line-height: 31px;
+}
+
+.tab1 {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 30px;
+}
+
+.tab1 ul li {
+    display: inline-block;
+}
+
+.tab1 ul li a {
+    width: 200px;
+    height: 56px;
+    border-radius: 0px !important;
+    border: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fe846f;
+
+}
+
+.tab1 .nav-pills .nav-link.active {
+    background: #fe846f;
+}
+
+.tab1 ul li a p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fe846f;
+    line-height: 45px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    letter-spacing: 3px;
+}
+
+.tab1 .nav-pills .nav-link.active p {
+    color: #fff;
+}
+
+
+#transaction .tab1 ul {
+    border: 2px solid #fe846f;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+tbody .tr:first-child td {
+    padding-top: 30px;
+}
+
+
+
+/* ==============================================
+Transaction Area End
+================================================ */
+
+
+
+/* =============================================
+8. Invest Area Start
+================================================= */
+#investor {
+    padding: 123px 0px 130px;
+}
+
+#investor .investbtn {
+    width: 140px;
+    height: 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    background: none;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#investor .investbtn:hover {
+    border-color: #fff;
+    background: #fff;
+    color: #ad96e5;
+}
+
+#investor .heading-title h2 {
+    margin-bottom: 10px;
+}
+
+#investor .heading-title p {
+    margin-top: 2px;
+    margin-bottom: 60px;
+}
+
+#investor .left .box {
+    padding: 45px 30px 50px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+}
+
+
+#investor .left .box h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#investor .left .box p {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+
+/* =============================================
+9. Invest Area End
+================================================= */
+
+#feature {
+    background: url(../img/featurebg.png)no-repeat center;
+    background-size: cover;
+    padding: 130px 0px 100px;
+}
+
+#feature .box {
+    background: #fff;
+}
+
+#feature .box .topHeader {
+    display: block;
+}
+
+#feature .box .topHeader h3 {
+    display: inline-block;
+}
+
+#feature .box {
+    margin-bottom: 30px;
+    padding: 25px 30px 30px 30px;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#feature .box .topHeader i {
+    font-size: 40px;
+    margin-right: 20px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#feature .box .topHeader {
+    margin-bottom: 10px;
+}
+
+#feature .box .topHeader h3 {
+    color: #384371;
+    font-weight: 600;
+}
+
+#feature .box .body p {
+    margin-bottom: 17px;
+    color: #575f84;
+    line-height: 30px;
+}
+
+#feature .box .body a {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    position: relative;
+}
+
+#feature .box .body a::after {
+    position: absolute;
+    content: " ";
+    bottom: 0px;
+    left: 0px;
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+
+}
+
+#feature .box:hover {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+}
+
+#feature .box:hover .topHeader i,
+#feature .box:hover .topHeader h3,
+#feature .box:hover .body a {
+    color: #fff;
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#feature .box:hover .body p {
+    color: #fff;
+}
+
+#feature .box:hover .body a::after {
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #ffffff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+
+}
+
+/* =============================================
+Feature Area Start
+================================================ */
+
+
+/* ==================================================
+ 10. Why Should Choose Us Area Start
+ ==================================================== */
+
+#wcu {
+    background: url(../img/whaychoseusbg.png) no-repeat bottom;
+    padding: 124px 0px 102px;
+}
+
+#wcu .heading-title h2 {
+    margin-bottom: 9px;
+}
+
+#wcu .heading-title p {
+    margin-top: 3px;
+    margin-bottom: 68px;
+}
+
+
+
+#wcu .heading-title {
+    margin-bottom: 30px;
+}
+
+
+#wcu .box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+    margin-bottom: 30px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#wcu .box .content {
+    padding: 47px 30px 50px;
+}
+
+#wcu .box .content h3 {
+    color: #384371;
+    font-weight: 600;
+}
+
+
+#wcu .box .content p {
+    color: #575f84;
+    line-height: 30px;
+    margin: 16px 0px 23px;
+}
+
+
+#wcu .box .viweBtn {
+    width: 140px;
+    height: 50px;
+    border: 2px solid #fe846f;
+    color: #fe846f;
+    text-align: center;
+    background: none;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#wcu .box .viweBtn:hover {
+    border-color: #fe846f;
+    background: #fe846f;
+    color: #fff;
+}
+
+#wcu .box:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ==================================================
+ Why Should Choose Us Area End
+ ==================================================== */
+
+
+
+
+/* ===================================================
+11. Payment Method Area Start
+===================================================== */
+#paymentMethod {
+    padding: 123px 0px 150px;
+}
+
+#paymentMethod .paypatner ul li {
+    display: inline-block;
+}
+
+#paymentMethod .paypatner ul li a {
+    margin: 0px 10px;
+}
+
+#paymentMethod .heading-title h2 {
+    margin-bottom: 9px;
+}
+
+#paymentMethod .heading-title p {
+    margin-top: 3px;
+}
+
+
+
+#paymentMethod .paypatner {
+    margin: 67px 0px 52px;
+}
+
+.calculate .box {
+    border-radius: 10px;
+    padding: 50px 30px 50px;
+    background: -webkit-linear-gradient(to right, #e6aefa, #5271c4);
+    background: -moz-linear-gradient(to right, #e6aefa, #5271c4);
+    background: linear-gradient(to right, #e6aefa, #5271c4);
+    position: relative;
+}
+
+.calculate .box::after {
+    position: absolute;
+    content: " ";
+    width: 95%;
+    height: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    background: linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.calculate .box input {
+    width: 100%;
+    height: 34px;
+    background: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculate .box input::placeholder {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculate .box h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.calculate .box label {
+    color: #fff;
+    font-weight: 500;
+}
+
+.calculate .box input:focus {
+    outline: 0px;
+}
+
+
+
+
+
+#paymentMethod form button {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    background: none;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    padding: 0px;
+}
+
+#paymentMethod form button:hover {
+    border-color: #fff;
+    background: #fff;
+    color: #6c7bcd;
+}
+
+/* ===================================================
+Payment Method Area End
+===================================================== */
+
+
+
+/* ===================================================
+12. Our Package Area Start
+===================================================== */
+
+#package {
+    background: url(../img/packbg.png) no-repeat;
+    padding: 123px 0px 154px;
+    background-size: cover;
+    border-top: 1px solid rgba(54, 31, 31, 0.06);
+}
+
+#package .heading-title {
+    margin-bottom: 67px;
+}
+
+#package .heading-title h2 {
+    margin-bottom: 10px;
+}
+
+.priceBox {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.102);
+    padding: 30px 30px 0px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.priceBox .header h3 {
+    font-size: 24px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.priceBox.meddel .header h3 {
+    font-size: 24px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #ffff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.priceBox .header h5 {
+    font-size: 16px;
+    color: #575f84;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.priceBox .list ul li p {
+    line-height: 35px;
+    color: #575f84;
+}
+
+
+.priceBox .footer h3 {
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.priceBox .footer p {
+    font-size: 12px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.priceBox .footer {
+    padding: 16px 0px 49px;
+}
+
+.priceBox .button {
+    position: relative;
+}
+
+.priceBox .button a {
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    
+    box-shadow: 0px 0px 10px #0003;
+}
+
+.priceBox.meddel .button a {
+    background: #fff;
+    font-weight: 14px;
+    text-transform: uppercase;
+    color: #384371;
+
+}
+
+
+.priceBox.meddel {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+}
+
+.priceBox.meddel h3,
+.priceBox.meddel h5,
+.priceBox.meddel ul li p {
+    color: #fff;
+}
+
+.priceBox.meddel .footer h3,
+.priceBox.meddel .footer p {
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.pBoxPopular {
+    text-align: center;
+    padding: 5px;
+    border-image: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
+    border-width: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    background: #fff;
+    border: 2px solid transparent;
+    -moz-border-image: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-border-image: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+}
+
+.pBoxPopular p {
+    color: #fff;
+    position: relative;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.pBoxPopular p::after{
+    position: absolute;
+    content: " ";
+    width: 
+}
+.pBoxPopular::after {
+    position: absolute;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+
+.priceBox.normal {
+    margin-top: 43px;
+}
+
+.priceBox:hover{
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);  
+}
+
+
+
+.priceBox:hover .header h3,
+.priceBox:hover .footer h3,
+.priceBox:hover .footer p
+
+{
+  
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);  
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+
+.priceBox:hover .list ul li p,
+.priceBox:hover .header h5,
+.priceBox:hover .footer p
+{
+ color: #fff; 
+}
+
+.priceBox:hover .button a{
+    background-color: #fff;
+    
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);  
+    color: #242424;
+}
+.pBoxPopularR:hover .pBoxPopular{
+   
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4); 
+}
+.pBoxPopularR:hover .pBoxPopular p{
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);  
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+/* ===================================================
+Our Package Area End
+===================================================== */
+
+
+/*=================================================
+13. Investors Area Start
+=================================================*/
+#investors {
+    padding: 123px 0px 130px;
+}
+
+#investors .heading-title h2 {
+    margin-bottom: 10px;
+}
+
+#investors .heading-title p {
+    margin-top: 3px;
+}
+
+#investors .heading-title {
+    margin-bottom: 70px;
+}
+
+
+#investors .box .social_icon ul li {
+    display: inline-block;
+}
+
+#investors .box .social_icon ul {
+    text-align: center;
+}
+
+#investors .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+#investors .box .image .social_icon {
+    position: absolute;
+    z-index: 9;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
+#investors .box:hover .image .social_icon {
+    bottom: 0px;
+    opacity: 1;
+}
+
+#investors .box .social_icon ul a {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #fff;
+    display: inline-block;
+}
+
+#investors .box .social_icon i {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#investors .box .social_icon ul a:hover {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+}
+
+#investors .box .social_icon ul a:hover i {
+    background: -webkit-linear-gradient(to right, #fff, #fff);
+    background: -moz-linear-gradient(to right, #fff, #fff);
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+#investors .box {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+    margin-bottom: 50px;
+}
+
+#investors .box .info {
+    text-align: center;
+    padding: 13px 0px 11px;
+}
+
+#investors .box .info h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#investors .box .info h5 {
+    font-size: 16px;
+    color: #384371;
+    font-weight: 600;
+}
+
+#investors .box .info p {
+    font-size: 12px;
+    color: #575f84;
+}
+
+/*=================================================
+Investors Area End
+=================================================*/
+
+
+
+
+/* ==============================================
+ 14. FAQ Area Start
+ ================================================ */
+#faq {
+    background: url(../img/faqbg.png) no-repeat bottom;
+    background-size: cover;
+    padding: 122px 0px 183px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+#faq .heading-title p {
+    margin-top: 3px;
+}
+
+#faq .heading-title h2 {
+    margin-bottom: 9px;
+}
+
+#faq .heading-title {
+    margin-bottom: 68px;
+}
+
+.faq-accordian .panel-group .panel.panel-default {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+}
+
+.faq-accordian .panel-group .panel .panel-heading {
+    border: none;
+    padding: 0;
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a {
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 24px 30px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a:after {
+    position: absolute;
+    right: 30px;
+    top: 38px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f107";
+    transform: translateY(-50%);
+    font-size: 18px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"]:after {
+    content: "\f106";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 18px;
+    color: #575f84;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a {
+    color: #575f84;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Exo', sans-serif;
+
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
+    border-bottom: 0;
+    color: #1f3566;
+    background: #fff;
+    /* padding-bottom: 0; */
+    cursor: pointer;
+}
+
+.faq-accordian .panel-group .panel .panel-body {
+    background-color: #fff;
+    border-top: 0;
+    padding: 0px 30px 44px 30px;
+    font-size: 16px;
+    color: #575f84;
+    line-height: 26px;
+    line-height: 30px;
+}
+
+.faq-accordian .panel-group .panel .panel-heading .panel-title a[aria-expanded="true"] {
+    padding-top: 47px;
+}
+
+/* ====================================================
+FAQ Area End
+======================================================= */
+
+
+
+/*==================================================
+15. Footer Area Start 
+====================================================*/
+#footer {
+    background: #1e3056;
+    padding: 195px 0px 26px;
+}
+
+#footer .newslatterBox .box {
+    background: #8929e2;
+    padding: 47px 120px 42px;
+    margin-top: -276px;
+}
+
+#footer .newslatterBox .left {
+    margin-right: 120px;
+}
+
+#footer .newslatterBox h2 {
+    font-size: 30px;
+    color: #fff;
+
+}
+
+#footer .newslatterBox .sectionSeparator {
+    background: #fff;
+}
+
+#footer .newslatterBox input {
+    width: 270px;
+    height: 50px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    padding: 0px 20px;
+    color: #fff;
+    box-shadow: 0px 3px 10px #0000001a;
+}
+
+#footer .newslatterBox button {
+    width: 170px;
+    height: 50px;
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin: 0px 0px 0px -4px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    box-shadow: 0px 3px 10px #0000001a;
+}
+
+#footer .newslatterBox button:hover {
+    background: #fff;
+    color: #8a2ae2;
+}
+
+#footer .newslatterBox input::placeholder {
+    color: rgba(255, 255, 255, 0.30);
+}
+
+#footer .newslatterBox input:focus {
+    border-color: #fff;
+}
+
+#footer .logo a {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+#footer .box p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#footer .box .social_links {
+    margin: 28px 0px 25px;
+}
+
+#footer .box .social_links ul li {
+    display: inline-block;
+}
+
+
+#footer .box .social_links i {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 18px;
+    border-radius: 3px;
+}
+
+#footer .box .social_links i.fa-facebook-f {
+    background: #254887;
+}
+
+#footer .box .social_links i.fa-twitter {
+    background: #00afe9;
+}
+
+#footer .box .social_links i.fa-google-plus-g {
+    background: #d14232;
+}
+
+#footer .box .social_links i.fa-linkedin-in {
+    background: #329ad1;
+}
+
+#footer .box2 h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#footer .box2 ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#footer .box ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer .box3 h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#footer .box3 ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+#footer .box4 h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#footer .box4 a {
+    display: block;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#footer  .copyright p{
+    color: #ffff;
+}
+#footer  .copyright{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 25px;
+    margin-top: 105px;
+}
+
+
+
+/*==================================================
+Footer Area End 
+====================================================*/
+
+
+
+
+/*==================================================
+16. Click BottomToTop
+====================================================*/
+.totop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.totop.show {
+    opacity: 1;
+}
+
+.totop>a {
+    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
+    background: linear-gradient(to right, #efb1fd, #5271c4);
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.totop>a:hover {
+    background: -webkit-linear-gradient(to left, #efb1fd, #5271c4);
+    background: -moz-linear-gradient(to left, #efb1fd, #5271c4);
+    background: linear-gradient(to left, #efb1fd, #5271c4);
+}
+
+
